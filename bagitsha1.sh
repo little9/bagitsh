@@ -33,5 +33,5 @@ find "$PWD"/$1/data -type f -print0 | xargs -0 sha1sum > $1/manifest-sha1.txt
 # Make the bagit text file
 touch $1/bagit.txt
 echo "BagIt-version 0.98" > $1/bagit.txt
-echo "Tag-File-Character-Encoding: UTF-8" > $1/bagit.txt
+echo "Tag-File-Character-Encoding: UTF-8" >> $1/bagit.txt
 
