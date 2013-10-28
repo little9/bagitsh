@@ -1,7 +1,6 @@
+#!/bin/bash
 # Usage: bagit nameofbagfolder nameoffoldertobebagged
 # Make the bag and data directory 
-
-
 
 command -v md5sum >/dev/null 2>&1 || { 
     echo "This script requires md5sum but it's not installed." >&2; exit 1; 
